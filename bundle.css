@@ -2,6 +2,8 @@
  * Css grid variables
  */
 
+/* stylelint-disable number-max-precision */
+
 @font-face {
   font-family: "EconSans";
   font-weight: 300;
