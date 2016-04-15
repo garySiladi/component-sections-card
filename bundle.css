@@ -1,11 +1,216 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-indent: -30000px;
+  background-repeat: no-repeat;
+}
+.link-button--styled {
+  display: inline-block;
+  padding: 20px
+    20px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #000;
+  font-family: Tahoma, sans-serif;
+  font-size: 0.8em;
+  line-height: 1.4;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 0.3em;
+}
+.link-button--disabled {
+  cursor: default;
+  background-color: #c0c0c0;
+}
+.link-button--shadow {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+/* stylelint-disable selector-no-type */
+.link-button__group svg {
+  vertical-align: bottom;
+}
+/* stylelint-enable selector-no-type */
+.link-button__icon {
+  vertical-align: middle;
+}
+/* stylelint-disable selector-no-universal */
+.sections-card * {
+  box-sizing: border-box;
+}
+/* stylelint-enable selector-no-universal */
+.sections-card {
+  padding: 0;
+  color: #b6b6b6;
+  font-family: 'EconSans', Tahoma, sans-serif;
+  font-size: 18px;
+  font-size: 1rem;
+  font-weight: normal;
+}
+.sections-card__wrapper {
+  margin: 0 auto;
+  line-height: 1.4;
+}
+.sections-card .link-button {
+  display: block;
+  padding-left: 0.5em;
+  color: #383e42;
+  font-size: 0.79012em;
+  text-decoration: none;
+}
+.sections-card__list .link-button:hover {
+  color: #3e51b5;
+}
+.sections-card__list {
+  box-sizing: border-box;
+  padding: 0 3em;
+}
+.sections-card__list .list {
+  margin: 0;
+  padding: 0;
+}
+.sections-card__link {
+  color: #b6b6b6;
+}
+.sections-card .list__item {
+  display: block;
+  vertical-align: top;
+  width: 100%;
+  line-height: 1.7em;
+  white-space: nowrap;
+}
+.sections-card .list__item:last-child {
+  margin-bottom: 0;
+}
+.sections-card__menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.sections-card__list-sections {
+  max-width: 50%;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0;
+}
+.sections-card__list-sections .list {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+}
+.sections-card__list-media {
+  max-width: 20%;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0;
+  text-align: center;
+}
+.sections-card__list-media .list {
+  display: inline-block;
+}
+.sections-card__list-media .list__item {
+  clear: both;
+  display: inline;
+  text-align: left;
+}
+.sections-card__list-media .link-button.link-button--icon-background {
+  padding-left: 2.5em;
+  cursor: pointer;
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  background-size: 1.8em;
+}
+.sections-card__list-blogs {
+  max-width: 20%;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0;
+}
+.sections-card__list-media,
+.sections-card__list-blogs {
+  border-left: solid 1px #b6b6b6;
+}
+/* stylelint-disable selector-no-type */
+.sections-card__list-media svg,
+.sections-card__list-media use {
+  fill: #3e51b5;
+}
+/* stylelint-enable selector-no-type */
+.sections-card__list-media .Icon {
+  margin-right: 0.5em;
+}
+.sections-card__header {
+  margin-top: 0;
+  padding-left: 0.5em;
+  color: #383e42;
+  font-size: 0.79012em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* stylelint-disable selector-no-type */
+.sections-card__link.link-button--icon svg {
+  vertical-align: middle;
+  width: 24px;
+}
+/* stylelint-enable selector-no-type */
+@media (max-width: 1000px) {
+  .sections-card .sections-card__list {
+    padding: 0 2em;
+  }
+}
 /**
  * Css grid variables
  */
-
 /* stylelint-disable number-max-precision */
-
 /* stylelint-disable custom-property-pattern, number-max-precision */
-
 @font-face {
   font-family: EconSans;
   font-weight: 300;
@@ -15,7 +220,6 @@
     /* Pretty Modern Browsers */
     url('/assets/ecosans-lig.woff') format('woff');
 }
-
 @font-face {
   font-family: EconSans;
   font-style: normal;
@@ -25,7 +229,6 @@
     /* Pretty Modern Browsers */
     url('/assets/ecosans-reg.woff') format('woff');
 }
-
 @font-face {
   font-family: EconSans;
   font-weight: 700;
@@ -35,7 +238,6 @@
     /* Pretty Modern Browsers */
     url('/assets/ecosans-bol.woff') format('woff');
 }
-
 @font-face {
   font-family: EconSans;
   font-style: italic;
@@ -45,7 +247,6 @@
     /* Pretty Modern Browsers */
     url('/assets/ecosans-ita.woff') format('woff');
 }
-
 @font-face {
   font-family: MiloSerifPro;
   font-style: normal;
@@ -55,7 +256,6 @@
     /* Pretty Modern Browsers */
     url('/assets/ecoserif-reg.woff') format('woff');
 }
-
 @font-face {
   font-family: MiloSerifPro;
   font-style: italic;
@@ -65,7 +265,6 @@
     /* Pretty Modern Browsers */
     url('/assets/ecoserif-ita.woff') format('woff');
 }
-
 @font-face {
   font-family: MiloSerifPro;
   font-weight: 500;
@@ -75,11 +274,9 @@
     /* Pretty Modern Browsers */
     url('/assets/ecoserif-med.woff') format('woff');
 }
-
 /**
  * Modular scale for type.
  */
-
 :root {
   /** Modular scale **/
   /* http://www.modularscale.com/?20&px&1.125&web&text */  /* Major second */
@@ -111,373 +308,100 @@
 
   /* Font: FF Milo Serif OT Medium */
 }
-
 /* stylelint-disable selector-no-type */
-
 html {
   font-size: 18px;
   line-height: 1.35;
 }
-
 @media screen and (min-width: 500px) {
   html {
     font-size: 20px;
   }
 }
-
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
-
 /**
  * Colors
  */
-
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  line-height: 1;
-  text-indent: -30000px;
-  background-repeat: no-repeat;
-}
-
-.link-button--styled {
-  display: inline-block;
-  font-family: 'EconSans', Tahoma, sans-serif;
-  font-size: 0.88889em;
-  line-height: 1.4;
-  text-decoration: none;
-  padding: 0.714em 36px;
-  padding: 0.714em 2rem;
-  background-color: #3e51b5;
-  color: #fff;
-  border-radius: .3em;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.link-button--disabled {
-  background-color: #b6b6b6;
-  cursor: default;
-}
-
-.link-button--shadow {
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-}
-
-.link-button__group svg {
-  vertical-align: bottom;
-}
-
-.link-button__icon {
-  vertical-align: middle;
-}
-
-/* stylelint-disable selector-no-universal */
-
-.sections-card * {
-  box-sizing: border-box;
-}
-
-/* stylelint-enable selector-no-universal */
-
-.sections-card {
-  padding: 0;
-  color: #b6b6b6;
-  font-family: 'EconSans', Tahoma, sans-serif;
-  font-size: 18px;
-  font-size: 1rem;
-  font-weight: normal;
-}
-
-.sections-card__wrapper {
-  margin: 0 auto;
-  line-height: 1.4;
-}
-
-.sections-card .link-button {
-  display: block;
-  padding-left: 0.5em;
-  color: #383e42;
-  font-size: 0.79012em;
-  text-decoration: none;
-}
-
-.sections-card__list .link-button:hover {
-  color: #3e51b5;
-}
-
-.sections-card__list {
-  box-sizing: border-box;
-  padding: 0 3em;
-}
-
-.sections-card__list .list {
-  margin: 0;
-  padding: 0;
-}
-
-.sections-card__link {
-  color: #b6b6b6;
-}
-
-.sections-card .list__item {
-  display: block;
-  vertical-align: top;
-  width: 100%;
-  line-height: 1.7em;
-  white-space: nowrap;
-}
-
-.sections-card .list__item:last-child {
-  margin-bottom: 0;
-}
-
-.sections-card__menu {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-content: stretch;
-      -ms-flex-line-pack: stretch;
-          align-content: stretch;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.sections-card__list-sections {
-  max-width: 50%;
-  -webkit-align-self: auto;
-      -ms-flex-item-align: auto;
-          align-self: auto;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  -webkit-box-ordinal-group: 1;
-  -webkit-order: 0;
-      -ms-flex-order: 0;
-          order: 0;
-}
-
-.sections-card__list-sections .list {
-  -webkit-column-count: 2;
-     -moz-column-count: 2;
-          column-count: 2;
-}
-
-.sections-card__list-media {
-  max-width: 20%;
-  -webkit-align-self: auto;
-      -ms-flex-item-align: auto;
-          align-self: auto;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  -webkit-box-ordinal-group: 1;
-  -webkit-order: 0;
-      -ms-flex-order: 0;
-          order: 0;
-  text-align: center;
-}
-
-.sections-card__list-media .list {
-  display: inline-block;
-}
-
-.sections-card__list-media .list__item {
-  clear: both;
-  display: inline;
-  text-align: left;
-}
-
-.sections-card__list-media .link-button.link-button--icon-background {
-  padding-left: 2.5em;
-  background-position: 5px center;
-  background-size: 1.8em;
-}
-
-.sections-card__list-blogs {
-  max-width: 20%;
-  -webkit-align-self: auto;
-      -ms-flex-item-align: auto;
-          align-self: auto;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  -webkit-box-ordinal-group: 1;
-  -webkit-order: 0;
-      -ms-flex-order: 0;
-          order: 0;
-}
-
-.sections-card__list-media,
-.sections-card__list-blogs {
-  border-left: solid 1px #b6b6b6;
-}
-
-/* stylelint-disable selector-no-type */
-
-.sections-card__list-media svg,
-.sections-card__list-media use {
-  fill: #3e51b5;
-}
-
-/* stylelint-enable selector-no-type */
-
-.sections-card__list-media .Icon {
-  margin-right: 0.5em;
-}
-
-.sections-card__header {
-  margin-top: 0;
-  padding-left: 0.5em;
-  color: #383e42;
-  font-size: 0.79012em;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-/* stylelint-disable selector-no-type */
-
-.sections-card__link.link-button--icon svg {
-  vertical-align: middle;
-  width: 24px;
-}
-
-/* stylelint-enable selector-no-type */
-
-@media (max-width: 1000px) {
-  .sections-card .sections-card__list {
-    padding: 0 2em;
-  }
-}
-
 .icon--apps {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201024%201024%22%20style%3D%22%22%20height%3D%22%22%20width%3D%22%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M218%20248v528c0%2016.6%2013.4%2030%2030%2030h528c16.6%200%2030-13.4%2030-30V248c0-16.6-13.4-30-30-30H248c-16.6%200-30%2013.4-30%2030zm-70%200c0-55.2%2044.8-100%20100-100h528c55.2%200%20100%2044.8%20100%20100v528c0%2055.2-44.8%20100-100%20100H248c-55.2%200-100-44.8-100-100V248z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M278.2%20278.3h207.5v207.5H278.2zm0%20260.7h207.5v207.5H278.2zM539%20278.3h207.6v207.5H539z%22%2F%3E%0A%3C%2Fsvg%3E");
 }
-
 .icon--apps-economist {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201024%201024%22%20style%3D%22fill%3A%23E3120B%3B%22%20height%3D%22%22%20width%3D%22%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M218%20248v528c0%2016.6%2013.4%2030%2030%2030h528c16.6%200%2030-13.4%2030-30V248c0-16.6-13.4-30-30-30H248c-16.6%200-30%2013.4-30%2030zm-70%200c0-55.2%2044.8-100%20100-100h528c55.2%200%20100%2044.8%20100%20100v528c0%2055.2-44.8%20100-100%20100H248c-55.2%200-100-44.8-100-100V248z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M278.2%20278.3h207.5v207.5H278.2zm0%20260.7h207.5v207.5H278.2zM539%20278.3h207.6v207.5H539z%22%2F%3E%0A%3C%2Fsvg%3E");
 }
-
 .icon--apps-london {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201024%201024%22%20style%3D%22fill%3A%23B6B6B6%3B%22%20height%3D%22%22%20width%3D%22%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M218%20248v528c0%2016.6%2013.4%2030%2030%2030h528c16.6%200%2030-13.4%2030-30V248c0-16.6-13.4-30-30-30H248c-16.6%200-30%2013.4-30%2030zm-70%200c0-55.2%2044.8-100%20100-100h528c55.2%200%20100%2044.8%20100%20100v528c0%2055.2-44.8%20100-100%20100H248c-55.2%200-100-44.8-100-100V248z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M278.2%20278.3h207.5v207.5H278.2zm0%20260.7h207.5v207.5H278.2zM539%20278.3h207.6v207.5H539z%22%2F%3E%0A%3C%2Fsvg%3E");
 }
-
 .icon--apps-thimphu {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201024%201024%22%20style%3D%22fill%3A%23FFFFFF%3B%22%20height%3D%22%22%20width%3D%22%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M218%20248v528c0%2016.6%2013.4%2030%2030%2030h528c16.6%200%2030-13.4%2030-30V248c0-16.6-13.4-30-30-30H248c-16.6%200-30%2013.4-30%2030zm-70%200c0-55.2%2044.8-100%20100-100h528c55.2%200%20100%2044.8%20100%20100v528c0%2055.2-44.8%20100-100%20100H248c-55.2%200-100-44.8-100-100V248z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M278.2%20278.3h207.5v207.5H278.2zm0%20260.7h207.5v207.5H278.2zM539%20278.3h207.6v207.5H539z%22%2F%3E%0A%3C%2Fsvg%3E");
 }
-
 .icon--apps-chicago {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201024%201024%22%20style%3D%22fill%3A%233E51B5%3B%22%20height%3D%22%22%20width%3D%22%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M218%20248v528c0%2016.6%2013.4%2030%2030%2030h528c16.6%200%2030-13.4%2030-30V248c0-16.6-13.4-30-30-30H248c-16.6%200-30%2013.4-30%2030zm-70%200c0-55.2%2044.8-100%20100-100h528c55.2%200%20100%2044.8%20100%20100v528c0%2055.2-44.8%20100-100%20100H248c-55.2%200-100-44.8-100-100V248z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M278.2%20278.3h207.5v207.5H278.2zm0%20260.7h207.5v207.5H278.2zM539%20278.3h207.6v207.5H539z%22%2F%3E%0A%3C%2Fsvg%3E");
 }
-
 .icon--radio {
   background: url("data:image/svg+xml,%3Csvg%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%201024%201024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ctitle%3Eradio%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cdefs%2F%3E%0A%20%20%20%20%3Cg%20id%3D%22Page-1%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22radio%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M558.83%2C356.32%20L222.00%2C356.32%20C166.77%2C356.32%20122%2C401.10%20122%2C456.33%20L122%2C787.91%20C122%2C843.14%20166.77%2C887.92%20222.00%2C887.92%20L802.99%2C887.92%20C858.22%2C887.92%20903%2C843.14%20903%2C787.91%20L903%2C456.33%20C903%2C401.10%20858.22%2C356.32%20802.99%2C356.32%20L741.40%2C356.32%20L733.50%2C353.04%20L247.19%2C151.15%20L214.87%2C137.73%20L188.03%2C202.38%20L220.35%2C215.80%20L558.83%2C356.32%20Z%20M196.51%2C460.90%20L839.12%2C460.90%20L839.12%2C589.68%20L196.51%2C589.68%20L196.51%2C460.90%20L196.51%2C460.90%20Z%20M771.38%2C798.83%20C807.19%2C798.83%20836.22%2C769.79%20836.22%2C733.96%20C836.22%2C698.13%20807.19%2C669.08%20771.38%2C669.08%20C735.57%2C669.08%20706.54%2C698.13%20706.54%2C733.96%20C706.54%2C769.79%20735.57%2C798.83%20771.38%2C798.83%20L771.38%2C798.83%20Z%20M582.66%2C798.83%20C618.47%2C798.83%20647.50%2C769.79%20647.50%2C733.96%20C647.50%2C698.13%20618.47%2C669.08%20582.66%2C669.08%20C546.85%2C669.08%20517.82%2C698.13%20517.82%2C733.96%20C517.82%2C769.79%20546.85%2C798.83%20582.66%2C798.83%20L582.66%2C798.83%20Z%22%20id%3D%22Path%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E");
 }
-
 .icon--radio-economist {
   background: url("data:image/svg+xml,%3Csvg%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%201024%201024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ctitle%3Eradio%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cdefs%2F%3E%0A%20%20%20%20%3Cg%20id%3D%22Page-1%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22radio%22%20fill%3D%22%23E3120B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M558.83%2C356.32%20L222.00%2C356.32%20C166.77%2C356.32%20122%2C401.10%20122%2C456.33%20L122%2C787.91%20C122%2C843.14%20166.77%2C887.92%20222.00%2C887.92%20L802.99%2C887.92%20C858.22%2C887.92%20903%2C843.14%20903%2C787.91%20L903%2C456.33%20C903%2C401.10%20858.22%2C356.32%20802.99%2C356.32%20L741.40%2C356.32%20L733.50%2C353.04%20L247.19%2C151.15%20L214.87%2C137.73%20L188.03%2C202.38%20L220.35%2C215.80%20L558.83%2C356.32%20Z%20M196.51%2C460.90%20L839.12%2C460.90%20L839.12%2C589.68%20L196.51%2C589.68%20L196.51%2C460.90%20L196.51%2C460.90%20Z%20M771.38%2C798.83%20C807.19%2C798.83%20836.22%2C769.79%20836.22%2C733.96%20C836.22%2C698.13%20807.19%2C669.08%20771.38%2C669.08%20C735.57%2C669.08%20706.54%2C698.13%20706.54%2C733.96%20C706.54%2C769.79%20735.57%2C798.83%20771.38%2C798.83%20L771.38%2C798.83%20Z%20M582.66%2C798.83%20C618.47%2C798.83%20647.50%2C769.79%20647.50%2C733.96%20C647.50%2C698.13%20618.47%2C669.08%20582.66%2C669.08%20C546.85%2C669.08%20517.82%2C698.13%20517.82%2C733.96%20C517.82%2C769.79%20546.85%2C798.83%20582.66%2C798.83%20L582.66%2C798.83%20Z%22%20id%3D%22Path%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E");
 }
-
 .icon--radio-london {
   background: url("data:image/svg+xml,%3Csvg%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%201024%201024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ctitle%3Eradio%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cdefs%2F%3E%0A%20%20%20%20%3Cg%20id%3D%22Page-1%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22radio%22%20fill%3D%22%23B6B6B6%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M558.83%2C356.32%20L222.00%2C356.32%20C166.77%2C356.32%20122%2C401.10%20122%2C456.33%20L122%2C787.91%20C122%2C843.14%20166.77%2C887.92%20222.00%2C887.92%20L802.99%2C887.92%20C858.22%2C887.92%20903%2C843.14%20903%2C787.91%20L903%2C456.33%20C903%2C401.10%20858.22%2C356.32%20802.99%2C356.32%20L741.40%2C356.32%20L733.50%2C353.04%20L247.19%2C151.15%20L214.87%2C137.73%20L188.03%2C202.38%20L220.35%2C215.80%20L558.83%2C356.32%20Z%20M196.51%2C460.90%20L839.12%2C460.90%20L839.12%2C589.68%20L196.51%2C589.68%20L196.51%2C460.90%20L196.51%2C460.90%20Z%20M771.38%2C798.83%20C807.19%2C798.83%20836.22%2C769.79%20836.22%2C733.96%20C836.22%2C698.13%20807.19%2C669.08%20771.38%2C669.08%20C735.57%2C669.08%20706.54%2C698.13%20706.54%2C733.96%20C706.54%2C769.79%20735.57%2C798.83%20771.38%2C798.83%20L771.38%2C798.83%20Z%20M582.66%2C798.83%20C618.47%2C798.83%20647.50%2C769.79%20647.50%2C733.96%20C647.50%2C698.13%20618.47%2C669.08%20582.66%2C669.08%20C546.85%2C669.08%20517.82%2C698.13%20517.82%2C733.96%20C517.82%2C769.79%20546.85%2C798.83%20582.66%2C798.83%20L582.66%2C798.83%20Z%22%20id%3D%22Path%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E");
 }
-
 .icon--radio-thimphu {
   background: url("data:image/svg+xml,%3Csvg%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%201024%201024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ctitle%3Eradio%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cdefs%2F%3E%0A%20%20%20%20%3Cg%20id%3D%22Page-1%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22radio%22%20fill%3D%22%23FFFFFF%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M558.83%2C356.32%20L222.00%2C356.32%20C166.77%2C356.32%20122%2C401.10%20122%2C456.33%20L122%2C787.91%20C122%2C843.14%20166.77%2C887.92%20222.00%2C887.92%20L802.99%2C887.92%20C858.22%2C887.92%20903%2C843.14%20903%2C787.91%20L903%2C456.33%20C903%2C401.10%20858.22%2C356.32%20802.99%2C356.32%20L741.40%2C356.32%20L733.50%2C353.04%20L247.19%2C151.15%20L214.87%2C137.73%20L188.03%2C202.38%20L220.35%2C215.80%20L558.83%2C356.32%20Z%20M196.51%2C460.90%20L839.12%2C460.90%20L839.12%2C589.68%20L196.51%2C589.68%20L196.51%2C460.90%20L196.51%2C460.90%20Z%20M771.38%2C798.83%20C807.19%2C798.83%20836.22%2C769.79%20836.22%2C733.96%20C836.22%2C698.13%20807.19%2C669.08%20771.38%2C669.08%20C735.57%2C669.08%20706.54%2C698.13%20706.54%2C733.96%20C706.54%2C769.79%20735.57%2C798.83%20771.38%2C798.83%20L771.38%2C798.83%20Z%20M582.66%2C798.83%20C618.47%2C798.83%20647.50%2C769.79%20647.50%2C733.96%20C647.50%2C698.13%20618.47%2C669.08%20582.66%2C669.08%20C546.85%2C669.08%20517.82%2C698.13%20517.82%2C733.96%20C517.82%2C769.79%20546.85%2C798.83%20582.66%2C798.83%20L582.66%2C798.83%20Z%22%20id%3D%22Path%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E");
 }
-
 .icon--radio-chicago {
   background: url("data:image/svg+xml,%3Csvg%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%201024%201024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ctitle%3Eradio%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cdefs%2F%3E%0A%20%20%20%20%3Cg%20id%3D%22Page-1%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22radio%22%20fill%3D%22%233E51B5%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M558.83%2C356.32%20L222.00%2C356.32%20C166.77%2C356.32%20122%2C401.10%20122%2C456.33%20L122%2C787.91%20C122%2C843.14%20166.77%2C887.92%20222.00%2C887.92%20L802.99%2C887.92%20C858.22%2C887.92%20903%2C843.14%20903%2C787.91%20L903%2C456.33%20C903%2C401.10%20858.22%2C356.32%20802.99%2C356.32%20L741.40%2C356.32%20L733.50%2C353.04%20L247.19%2C151.15%20L214.87%2C137.73%20L188.03%2C202.38%20L220.35%2C215.80%20L558.83%2C356.32%20Z%20M196.51%2C460.90%20L839.12%2C460.90%20L839.12%2C589.68%20L196.51%2C589.68%20L196.51%2C460.90%20L196.51%2C460.90%20Z%20M771.38%2C798.83%20C807.19%2C798.83%20836.22%2C769.79%20836.22%2C733.96%20C836.22%2C698.13%20807.19%2C669.08%20771.38%2C669.08%20C735.57%2C669.08%20706.54%2C698.13%20706.54%2C733.96%20C706.54%2C769.79%20735.57%2C798.83%20771.38%2C798.83%20L771.38%2C798.83%20Z%20M582.66%2C798.83%20C618.47%2C798.83%20647.50%2C769.79%20647.50%2C733.96%20C647.50%2C698.13%20618.47%2C669.08%20582.66%2C669.08%20C546.85%2C669.08%20517.82%2C698.13%20517.82%2C733.96%20C517.82%2C769.79%20546.85%2C798.83%20582.66%2C798.83%20L582.66%2C798.83%20Z%22%20id%3D%22Path%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E");
 }
-
 .icon--headset {
   background: url("data:image/svg+xml,%3Csvg%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%201024%201024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ctitle%3Eheadset%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cdefs%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M512%2C107%20C299.94%2C107%20128%2C278.94%20128%2C491%20L128%2C789.66%20C128%2C860.49%20185.17%2C917.66%20256%2C917.66%20L384%2C917.66%20L384%2C576.33%20L213.33%2C576.33%20L213.33%2C491%20C213.33%2C325.88%20346.88%2C192.33%20512%2C192.33%20C677.12%2C192.33%20810.66%2C325.88%20810.66%2C491%20L810.66%2C576.33%20L640%2C576.33%20L640%2C917.66%20L768%2C917.66%20C838.82%2C917.66%20896%2C860.49%20896%2C789.66%20L896%2C491%20C896%2C278.94%20724.05%2C107%20512%2C107%20L512%2C107%20Z%22%20id%3D%22Shape%22%2F%3E%0A%3C%2Fsvg%3E");
 }
-
 .icon--headset-economist {
   background: url("data:image/svg+xml,%3Csvg%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%201024%201024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22fill%3A%23E3120B%3B%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ctitle%3Eheadset%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cdefs%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M512%2C107%20C299.94%2C107%20128%2C278.94%20128%2C491%20L128%2C789.66%20C128%2C860.49%20185.17%2C917.66%20256%2C917.66%20L384%2C917.66%20L384%2C576.33%20L213.33%2C576.33%20L213.33%2C491%20C213.33%2C325.88%20346.88%2C192.33%20512%2C192.33%20C677.12%2C192.33%20810.66%2C325.88%20810.66%2C491%20L810.66%2C576.33%20L640%2C576.33%20L640%2C917.66%20L768%2C917.66%20C838.82%2C917.66%20896%2C860.49%20896%2C789.66%20L896%2C491%20C896%2C278.94%20724.05%2C107%20512%2C107%20L512%2C107%20Z%22%20id%3D%22Shape%22%2F%3E%0A%3C%2Fsvg%3E");
 }
-
 .icon--headset-london {
   background: url("data:image/svg+xml,%3Csvg%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%201024%201024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22fill%3A%23B6B6B6%3B%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ctitle%3Eheadset%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cdefs%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M512%2C107%20C299.94%2C107%20128%2C278.94%20128%2C491%20L128%2C789.66%20C128%2C860.49%20185.17%2C917.66%20256%2C917.66%20L384%2C917.66%20L384%2C576.33%20L213.33%2C576.33%20L213.33%2C491%20C213.33%2C325.88%20346.88%2C192.33%20512%2C192.33%20C677.12%2C192.33%20810.66%2C325.88%20810.66%2C491%20L810.66%2C576.33%20L640%2C576.33%20L640%2C917.66%20L768%2C917.66%20C838.82%2C917.66%20896%2C860.49%20896%2C789.66%20L896%2C491%20C896%2C278.94%20724.05%2C107%20512%2C107%20L512%2C107%20Z%22%20id%3D%22Shape%22%2F%3E%0A%3C%2Fsvg%3E");
 }
-
 .icon--headset-thimphu {
   background: url("data:image/svg+xml,%3Csvg%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%201024%201024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22fill%3A%23FFFFFF%3B%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ctitle%3Eheadset%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cdefs%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M512%2C107%20C299.94%2C107%20128%2C278.94%20128%2C491%20L128%2C789.66%20C128%2C860.49%20185.17%2C917.66%20256%2C917.66%20L384%2C917.66%20L384%2C576.33%20L213.33%2C576.33%20L213.33%2C491%20C213.33%2C325.88%20346.88%2C192.33%20512%2C192.33%20C677.12%2C192.33%20810.66%2C325.88%20810.66%2C491%20L810.66%2C576.33%20L640%2C576.33%20L640%2C917.66%20L768%2C917.66%20C838.82%2C917.66%20896%2C860.49%20896%2C789.66%20L896%2C491%20C896%2C278.94%20724.05%2C107%20512%2C107%20L512%2C107%20Z%22%20id%3D%22Shape%22%2F%3E%0A%3C%2Fsvg%3E");
 }
-
 .icon--headset-chicago {
   background: url("data:image/svg+xml,%3Csvg%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%201024%201024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22fill%3A%233E51B5%3B%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ctitle%3Eheadset%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cdefs%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M512%2C107%20C299.94%2C107%20128%2C278.94%20128%2C491%20L128%2C789.66%20C128%2C860.49%20185.17%2C917.66%20256%2C917.66%20L384%2C917.66%20L384%2C576.33%20L213.33%2C576.33%20L213.33%2C491%20C213.33%2C325.88%20346.88%2C192.33%20512%2C192.33%20C677.12%2C192.33%20810.66%2C325.88%20810.66%2C491%20L810.66%2C576.33%20L640%2C576.33%20L640%2C917.66%20L768%2C917.66%20C838.82%2C917.66%20896%2C860.49%20896%2C789.66%20L896%2C491%20C896%2C278.94%20724.05%2C107%20512%2C107%20L512%2C107%20Z%22%20id%3D%22Shape%22%2F%3E%0A%3C%2Fsvg%3E");
 }
-
 .icon--video {
   background: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%201024%201024%22%20enable-background%3D%22new%200%200%201024%201024%22%20xml%3Aspace%3D%22preserve%22%20style%3D%22%22%20height%3D%22%22%20width%3D%22%22%3E%0D%0A%3Ctitle%3EVideo%3C%2Ftitle%3E%0D%0A%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0D%0A%3Cpath%20id%3D%22Shape%22%20d%3D%22M426.7%2C704l256-192l-256-192V704L426.7%2C704z%20M512%2C85.3%0D%0A%09C276.5%2C85.3%2C85.3%2C276.5%2C85.3%2C512S276.5%2C938.7%2C512%2C938.7S938.7%2C747.5%2C938.7%2C512S747.5%2C85.3%2C512%2C85.3L512%2C85.3z%20M512%2C853.3%0D%0A%09c-188.2%2C0-341.3-153.2-341.3-341.3S323.8%2C170.7%2C512%2C170.7S853.3%2C323.8%2C853.3%2C512S700.2%2C853.3%2C512%2C853.3L512%2C853.3z%22%2F%3E%0D%0A%3C%2Fsvg%3E");
 }
-
 .icon--video-economist {
   background: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%201024%201024%22%20enable-background%3D%22new%200%200%201024%201024%22%20xml%3Aspace%3D%22preserve%22%20style%3D%22fill%3A%23E3120B%3B%22%20height%3D%22%22%20width%3D%22%22%3E%0D%0A%3Ctitle%3EVideo%3C%2Ftitle%3E%0D%0A%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0D%0A%3Cpath%20id%3D%22Shape%22%20d%3D%22M426.7%2C704l256-192l-256-192V704L426.7%2C704z%20M512%2C85.3%0D%0A%09C276.5%2C85.3%2C85.3%2C276.5%2C85.3%2C512S276.5%2C938.7%2C512%2C938.7S938.7%2C747.5%2C938.7%2C512S747.5%2C85.3%2C512%2C85.3L512%2C85.3z%20M512%2C853.3%0D%0A%09c-188.2%2C0-341.3-153.2-341.3-341.3S323.8%2C170.7%2C512%2C170.7S853.3%2C323.8%2C853.3%2C512S700.2%2C853.3%2C512%2C853.3L512%2C853.3z%22%2F%3E%0D%0A%3C%2Fsvg%3E");
 }
-
 .icon--video-london {
   background: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%201024%201024%22%20enable-background%3D%22new%200%200%201024%201024%22%20xml%3Aspace%3D%22preserve%22%20style%3D%22fill%3A%23B6B6B6%3B%22%20height%3D%22%22%20width%3D%22%22%3E%0D%0A%3Ctitle%3EVideo%3C%2Ftitle%3E%0D%0A%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0D%0A%3Cpath%20id%3D%22Shape%22%20d%3D%22M426.7%2C704l256-192l-256-192V704L426.7%2C704z%20M512%2C85.3%0D%0A%09C276.5%2C85.3%2C85.3%2C276.5%2C85.3%2C512S276.5%2C938.7%2C512%2C938.7S938.7%2C747.5%2C938.7%2C512S747.5%2C85.3%2C512%2C85.3L512%2C85.3z%20M512%2C853.3%0D%0A%09c-188.2%2C0-341.3-153.2-341.3-341.3S323.8%2C170.7%2C512%2C170.7S853.3%2C323.8%2C853.3%2C512S700.2%2C853.3%2C512%2C853.3L512%2C853.3z%22%2F%3E%0D%0A%3C%2Fsvg%3E");
 }
-
 .icon--video-thimphu {
   background: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%201024%201024%22%20enable-background%3D%22new%200%200%201024%201024%22%20xml%3Aspace%3D%22preserve%22%20style%3D%22fill%3A%23FFFFFF%3B%22%20height%3D%22%22%20width%3D%22%22%3E%0D%0A%3Ctitle%3EVideo%3C%2Ftitle%3E%0D%0A%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0D%0A%3Cpath%20id%3D%22Shape%22%20d%3D%22M426.7%2C704l256-192l-256-192V704L426.7%2C704z%20M512%2C85.3%0D%0A%09C276.5%2C85.3%2C85.3%2C276.5%2C85.3%2C512S276.5%2C938.7%2C512%2C938.7S938.7%2C747.5%2C938.7%2C512S747.5%2C85.3%2C512%2C85.3L512%2C85.3z%20M512%2C853.3%0D%0A%09c-188.2%2C0-341.3-153.2-341.3-341.3S323.8%2C170.7%2C512%2C170.7S853.3%2C323.8%2C853.3%2C512S700.2%2C853.3%2C512%2C853.3L512%2C853.3z%22%2F%3E%0D%0A%3C%2Fsvg%3E");
 }
-
 .icon--video-chicago {
   background: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%201024%201024%22%20enable-background%3D%22new%200%200%201024%201024%22%20xml%3Aspace%3D%22preserve%22%20style%3D%22fill%3A%233E51B5%3B%22%20height%3D%22%22%20width%3D%22%22%3E%0D%0A%3Ctitle%3EVideo%3C%2Ftitle%3E%0D%0A%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0D%0A%3Cpath%20id%3D%22Shape%22%20d%3D%22M426.7%2C704l256-192l-256-192V704L426.7%2C704z%20M512%2C85.3%0D%0A%09C276.5%2C85.3%2C85.3%2C276.5%2C85.3%2C512S276.5%2C938.7%2C512%2C938.7S938.7%2C747.5%2C938.7%2C512S747.5%2C85.3%2C512%2C85.3L512%2C85.3z%20M512%2C853.3%0D%0A%09c-188.2%2C0-341.3-153.2-341.3-341.3S323.8%2C170.7%2C512%2C170.7S853.3%2C323.8%2C853.3%2C512S700.2%2C853.3%2C512%2C853.3L512%2C853.3z%22%2F%3E%0D%0A%3C%2Fsvg%3E");
 }
-
 .icon--film {
   background: url("data:image/svg+xml,%3Csvg%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%201024%201024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ctitle%3EFilm%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cdefs%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M768%2C128%20L768%2C213.33%20L682.66%2C213.33%20L682.66%2C128%20L341.33%2C128%20L341.33%2C213.33%20L256%2C213.33%20L256%2C128%20L170.66%2C128%20L170.66%2C896%20L256%2C896%20L256%2C810.66%20L341.33%2C810.66%20L341.33%2C896%20L682.66%2C896%20L682.66%2C810.66%20L768%2C810.66%20L768%2C896%20L853.33%2C896%20L853.33%2C128%20L768%2C128%20L768%2C128%20Z%20M341.33%2C725.33%20L256%2C725.33%20L256%2C640%20L341.33%2C640%20L341.33%2C725.33%20L341.33%2C725.33%20Z%20M341.33%2C554.66%20L256%2C554.66%20L256%2C469.33%20L341.33%2C469.33%20L341.33%2C554.66%20L341.33%2C554.66%20Z%20M341.33%2C384%20L256%2C384%20L256%2C298.66%20L341.33%2C298.66%20L341.33%2C384%20L341.33%2C384%20Z%20M768%2C725.33%20L682.66%2C725.33%20L682.66%2C640%20L768%2C640%20L768%2C725.33%20L768%2C725.33%20Z%20M768%2C554.66%20L682.66%2C554.66%20L682.66%2C469.33%20L768%2C469.33%20L768%2C554.66%20L768%2C554.66%20Z%20M768%2C384%20L682.66%2C384%20L682.66%2C298.66%20L768%2C298.66%20L768%2C384%20L768%2C384%20Z%22%20id%3D%22Shape%22%2F%3E%0A%3C%2Fsvg%3E");
 }
-
 .icon--film-economist {
   background: url("data:image/svg+xml,%3Csvg%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%201024%201024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22fill%3A%23E3120B%3B%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ctitle%3EFilm%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cdefs%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M768%2C128%20L768%2C213.33%20L682.66%2C213.33%20L682.66%2C128%20L341.33%2C128%20L341.33%2C213.33%20L256%2C213.33%20L256%2C128%20L170.66%2C128%20L170.66%2C896%20L256%2C896%20L256%2C810.66%20L341.33%2C810.66%20L341.33%2C896%20L682.66%2C896%20L682.66%2C810.66%20L768%2C810.66%20L768%2C896%20L853.33%2C896%20L853.33%2C128%20L768%2C128%20L768%2C128%20Z%20M341.33%2C725.33%20L256%2C725.33%20L256%2C640%20L341.33%2C640%20L341.33%2C725.33%20L341.33%2C725.33%20Z%20M341.33%2C554.66%20L256%2C554.66%20L256%2C469.33%20L341.33%2C469.33%20L341.33%2C554.66%20L341.33%2C554.66%20Z%20M341.33%2C384%20L256%2C384%20L256%2C298.66%20L341.33%2C298.66%20L341.33%2C384%20L341.33%2C384%20Z%20M768%2C725.33%20L682.66%2C725.33%20L682.66%2C640%20L768%2C640%20L768%2C725.33%20L768%2C725.33%20Z%20M768%2C554.66%20L682.66%2C554.66%20L682.66%2C469.33%20L768%2C469.33%20L768%2C554.66%20L768%2C554.66%20Z%20M768%2C384%20L682.66%2C384%20L682.66%2C298.66%20L768%2C298.66%20L768%2C384%20L768%2C384%20Z%22%20id%3D%22Shape%22%2F%3E%0A%3C%2Fsvg%3E");
 }
-
 .icon--film-london {
   background: url("data:image/svg+xml,%3Csvg%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%201024%201024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22fill%3A%23B6B6B6%3B%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ctitle%3EFilm%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cdefs%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M768%2C128%20L768%2C213.33%20L682.66%2C213.33%20L682.66%2C128%20L341.33%2C128%20L341.33%2C213.33%20L256%2C213.33%20L256%2C128%20L170.66%2C128%20L170.66%2C896%20L256%2C896%20L256%2C810.66%20L341.33%2C810.66%20L341.33%2C896%20L682.66%2C896%20L682.66%2C810.66%20L768%2C810.66%20L768%2C896%20L853.33%2C896%20L853.33%2C128%20L768%2C128%20L768%2C128%20Z%20M341.33%2C725.33%20L256%2C725.33%20L256%2C640%20L341.33%2C640%20L341.33%2C725.33%20L341.33%2C725.33%20Z%20M341.33%2C554.66%20L256%2C554.66%20L256%2C469.33%20L341.33%2C469.33%20L341.33%2C554.66%20L341.33%2C554.66%20Z%20M341.33%2C384%20L256%2C384%20L256%2C298.66%20L341.33%2C298.66%20L341.33%2C384%20L341.33%2C384%20Z%20M768%2C725.33%20L682.66%2C725.33%20L682.66%2C640%20L768%2C640%20L768%2C725.33%20L768%2C725.33%20Z%20M768%2C554.66%20L682.66%2C554.66%20L682.66%2C469.33%20L768%2C469.33%20L768%2C554.66%20L768%2C554.66%20Z%20M768%2C384%20L682.66%2C384%20L682.66%2C298.66%20L768%2C298.66%20L768%2C384%20L768%2C384%20Z%22%20id%3D%22Shape%22%2F%3E%0A%3C%2Fsvg%3E");
 }
-
 .icon--film-thimphu {
   background: url("data:image/svg+xml,%3Csvg%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%201024%201024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22fill%3A%23FFFFFF%3B%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ctitle%3EFilm%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cdefs%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M768%2C128%20L768%2C213.33%20L682.66%2C213.33%20L682.66%2C128%20L341.33%2C128%20L341.33%2C213.33%20L256%2C213.33%20L256%2C128%20L170.66%2C128%20L170.66%2C896%20L256%2C896%20L256%2C810.66%20L341.33%2C810.66%20L341.33%2C896%20L682.66%2C896%20L682.66%2C810.66%20L768%2C810.66%20L768%2C896%20L853.33%2C896%20L853.33%2C128%20L768%2C128%20L768%2C128%20Z%20M341.33%2C725.33%20L256%2C725.33%20L256%2C640%20L341.33%2C640%20L341.33%2C725.33%20L341.33%2C725.33%20Z%20M341.33%2C554.66%20L256%2C554.66%20L256%2C469.33%20L341.33%2C469.33%20L341.33%2C554.66%20L341.33%2C554.66%20Z%20M341.33%2C384%20L256%2C384%20L256%2C298.66%20L341.33%2C298.66%20L341.33%2C384%20L341.33%2C384%20Z%20M768%2C725.33%20L682.66%2C725.33%20L682.66%2C640%20L768%2C640%20L768%2C725.33%20L768%2C725.33%20Z%20M768%2C554.66%20L682.66%2C554.66%20L682.66%2C469.33%20L768%2C469.33%20L768%2C554.66%20L768%2C554.66%20Z%20M768%2C384%20L682.66%2C384%20L682.66%2C298.66%20L768%2C298.66%20L768%2C384%20L768%2C384%20Z%22%20id%3D%22Shape%22%2F%3E%0A%3C%2Fsvg%3E");
 }
-
 .icon--film-chicago {
   background: url("data:image/svg+xml,%3Csvg%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%201024%201024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22fill%3A%233E51B5%3B%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ctitle%3EFilm%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cdefs%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M768%2C128%20L768%2C213.33%20L682.66%2C213.33%20L682.66%2C128%20L341.33%2C128%20L341.33%2C213.33%20L256%2C213.33%20L256%2C128%20L170.66%2C128%20L170.66%2C896%20L256%2C896%20L256%2C810.66%20L341.33%2C810.66%20L341.33%2C896%20L682.66%2C896%20L682.66%2C810.66%20L768%2C810.66%20L768%2C896%20L853.33%2C896%20L853.33%2C128%20L768%2C128%20L768%2C128%20Z%20M341.33%2C725.33%20L256%2C725.33%20L256%2C640%20L341.33%2C640%20L341.33%2C725.33%20L341.33%2C725.33%20Z%20M341.33%2C554.66%20L256%2C554.66%20L256%2C469.33%20L341.33%2C469.33%20L341.33%2C554.66%20L341.33%2C554.66%20Z%20M341.33%2C384%20L256%2C384%20L256%2C298.66%20L341.33%2C298.66%20L341.33%2C384%20L341.33%2C384%20Z%20M768%2C725.33%20L682.66%2C725.33%20L682.66%2C640%20L768%2C640%20L768%2C725.33%20L768%2C725.33%20Z%20M768%2C554.66%20L682.66%2C554.66%20L682.66%2C469.33%20L768%2C469.33%20L768%2C554.66%20L768%2C554.66%20Z%20M768%2C384%20L682.66%2C384%20L682.66%2C298.66%20L768%2C298.66%20L768%2C384%20L768%2C384%20Z%22%20id%3D%22Shape%22%2F%3E%0A%3C%2Fsvg%3E");
 }
-
 /* stylelint-disable selector-no-type */
-
 body {
   background: #f2f2f2;
 }
-
 /* stylelint-enable selector-no-type */
