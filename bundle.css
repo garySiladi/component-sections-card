@@ -27,10 +27,14 @@
   cursor: default;
   background-color: #c0c0c0;
 }
+/* stylelint-disable no-indistinguishable-colors */
+/* because that's the design */
 .link-button--shadow {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
+/* stylelint-enable no-indistinguishable-colors */
 /* stylelint-disable selector-no-type */
+/* because we won't know the class on the svg */
 .link-button__group svg {
   vertical-align: bottom;
 }
@@ -88,40 +92,31 @@
 }
 .sections-card__menu {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-content: stretch;
-      -ms-flex-line-pack: stretch;
-          align-content: stretch;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
   -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
 .sections-card__list-sections {
   max-width: 50%;
-  -webkit-align-self: auto;
-      -ms-flex-item-align: auto;
-          align-self: auto;
+  -ms-flex-item-align: auto;
+      align-self: auto;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   -webkit-box-ordinal-group: 1;
-  -webkit-order: 0;
       -ms-flex-order: 0;
           order: 0;
 }
@@ -132,15 +127,12 @@
 }
 .sections-card__list-media {
   max-width: 20%;
-  -webkit-align-self: auto;
-      -ms-flex-item-align: auto;
-          align-self: auto;
+  -ms-flex-item-align: auto;
+      align-self: auto;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   -webkit-box-ordinal-group: 1;
-  -webkit-order: 0;
       -ms-flex-order: 0;
           order: 0;
   text-align: center;
@@ -162,15 +154,12 @@
 }
 .sections-card__list-blogs {
   max-width: 20%;
-  -webkit-align-self: auto;
-      -ms-flex-item-align: auto;
-          align-self: auto;
+  -ms-flex-item-align: auto;
+      align-self: auto;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   -webkit-box-ordinal-group: 1;
-  -webkit-order: 0;
       -ms-flex-order: 0;
           order: 0;
 }
@@ -210,7 +199,10 @@
  * Css grid variables
  */
 /* stylelint-disable number-max-precision */
-/* stylelint-disable custom-property-pattern, number-max-precision */
+/* stylelint-disable custom-property-pattern, number-max-precision, value-keyword-case */
+/* */
+/* stylelint-disable value-keyword-case */
+/* too many components refer to EconSans */
 @font-face {
   font-family: EconSans;
   font-weight: 300;
@@ -309,6 +301,7 @@
   /* Font: FF Milo Serif OT Medium */
 }
 /* stylelint-disable selector-no-type */
+/* setting base font size on html - no default selector */
 html {
   font-size: 18px;
   line-height: 1.35;
@@ -325,6 +318,9 @@ body {
 /**
  * Colors
  */
+/* stylelint-disable no-indistinguishable-colors */
+/* to pass linting against --color-thimphu --color-berlin */
+/* stylelint-enable no-indistinguishable-colors */
 .icon--apps {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201024%201024%22%20style%3D%22%22%20height%3D%22%22%20width%3D%22%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M218%20248v528c0%2016.6%2013.4%2030%2030%2030h528c16.6%200%2030-13.4%2030-30V248c0-16.6-13.4-30-30-30H248c-16.6%200-30%2013.4-30%2030zm-70%200c0-55.2%2044.8-100%20100-100h528c55.2%200%20100%2044.8%20100%20100v528c0%2055.2-44.8%20100-100%20100H248c-55.2%200-100-44.8-100-100V248z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M278.2%20278.3h207.5v207.5H278.2zm0%20260.7h207.5v207.5H278.2zM539%20278.3h207.6v207.5H539z%22%2F%3E%0A%3C%2Fsvg%3E");
 }
