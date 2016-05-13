@@ -43,6 +43,7 @@
   vertical-align: middle;
 }
 /* stylelint-disable selector-no-universal */
+/* because not gonna list all the classes */
 .sections-card * {
   box-sizing: border-box;
 }
@@ -82,7 +83,6 @@
 }
 .sections-card .list__item {
   display: block;
-  vertical-align: top;
   width: 100%;
   line-height: 1.7em;
   white-space: nowrap;
@@ -168,6 +168,7 @@
   border-left: solid 1px #b6b6b6;
 }
 /* stylelint-disable selector-no-type */
+/* class of the svg not available */
 .sections-card__list-media svg,
 .sections-card__list-media use {
   fill: #3e51b5;
@@ -185,6 +186,7 @@
   text-transform: uppercase;
 }
 /* stylelint-disable selector-no-type */
+/* class of the svg not available */
 .sections-card__link.link-button--icon svg {
   vertical-align: middle;
   width: 24px;
@@ -397,6 +399,7 @@ body {
   background: url("data:image/svg+xml,%3Csvg%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%201024%201024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22fill%3A%233E51B5%3B%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ctitle%3EFilm%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cdefs%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M768%2C128%20L768%2C213.33%20L682.66%2C213.33%20L682.66%2C128%20L341.33%2C128%20L341.33%2C213.33%20L256%2C213.33%20L256%2C128%20L170.66%2C128%20L170.66%2C896%20L256%2C896%20L256%2C810.66%20L341.33%2C810.66%20L341.33%2C896%20L682.66%2C896%20L682.66%2C810.66%20L768%2C810.66%20L768%2C896%20L853.33%2C896%20L853.33%2C128%20L768%2C128%20L768%2C128%20Z%20M341.33%2C725.33%20L256%2C725.33%20L256%2C640%20L341.33%2C640%20L341.33%2C725.33%20L341.33%2C725.33%20Z%20M341.33%2C554.66%20L256%2C554.66%20L256%2C469.33%20L341.33%2C469.33%20L341.33%2C554.66%20L341.33%2C554.66%20Z%20M341.33%2C384%20L256%2C384%20L256%2C298.66%20L341.33%2C298.66%20L341.33%2C384%20L341.33%2C384%20Z%20M768%2C725.33%20L682.66%2C725.33%20L682.66%2C640%20L768%2C640%20L768%2C725.33%20L768%2C725.33%20Z%20M768%2C554.66%20L682.66%2C554.66%20L682.66%2C469.33%20L768%2C469.33%20L768%2C554.66%20L768%2C554.66%20Z%20M768%2C384%20L682.66%2C384%20L682.66%2C298.66%20L768%2C298.66%20L768%2C384%20L768%2C384%20Z%22%20id%3D%22Shape%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 /* stylelint-disable selector-no-type */
+/* thankfully only the example ;) */
 body {
   background: #f2f2f2;
 }
