@@ -2,15 +2,16 @@ import React from 'react';
 import SectionsCard from './index';
 import sectionsCardData from './context';
 
-sectionsCardData.media.map((mediaLink) => {
-  mediaLink.icon = {
-    useBackground: true,
-    color: 'chicago',
-    icon: mediaLink.meta,
-  };
-  return mediaLink;
-});
-
 export default (
-  <SectionsCard data={sectionsCardData} />
+  <SectionsCard.Main>
+    <SectionsCard.List links={sectionsCardData.sections}
+      title="Sections" topic="sections"
+    />
+    <SectionsCard.List links={sectionsCardData.media}
+      title="Media" topic="media"
+    />
+    <SectionsCard.List links={sectionsCardData.blogs}
+      title="Blogs" topic="blogs"
+    />
+  </SectionsCard.Main>
 );
