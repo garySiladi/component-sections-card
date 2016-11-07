@@ -2,8 +2,9 @@ import React from 'react';
 import SectionCardLinks from './section-card-links';
 import SectionCardTitle from './section-card-title';
 
-export default function SectionCardList({ title, links, topic }) {
+export default function SectionCardList({ title, links, topic, className }) {
   const content = [];
+  const optionalClass = className ? `${ className } ` : '';
   if (title) {
     content.push(
       <SectionCardTitle
@@ -19,7 +20,7 @@ export default function SectionCardList({ title, links, topic }) {
     />
   );
   return (
-    <div className={`sections-card__list sections-card__list-${ topic }`}>
+    <div className={`${ optionalClass }sections-card__list sections-card__list-${ topic }`}>
       {content}
     </div>
   );
@@ -35,5 +36,6 @@ if (process.env.NODE_ENV !== 'production') {
       })
     ).isRequired,
     topic: React.PropTypes.string,
+    className: React.PropTypes.string,
   };
 }

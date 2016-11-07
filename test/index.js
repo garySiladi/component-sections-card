@@ -2,7 +2,6 @@ import 'babel-polyfill';
 import React from 'react';
 import SectionsCard from '../src/index';
 import chai from 'chai';
-import context from '../src/context';
 chai.should();
 
 describe('A SectionsCard', () => {
@@ -11,7 +10,7 @@ describe('A SectionsCard', () => {
       SectionsCard.should.be.an('object');
     });
     it('it\'s renders a React element', () => {
-      React.isValidElement(<SectionsCard data={context} />).should.equal(true);
+      React.isValidElement(<SectionsCard.Main className="customName" />).should.equal(true);
     });
   });
 });
