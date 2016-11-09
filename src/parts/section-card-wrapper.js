@@ -16,7 +16,7 @@ export default function SectionsCardWrapper(props) {
           title={child.props.title}
           prefix={prefix}
          />);
-      if (child.props.join) {
+      if (child.props.wrapColumns) {
         joinContent.push(contentSwitch);
       } else {
         content.push(contentSwitch);
@@ -44,7 +44,7 @@ if (process.env.NODE_ENV !== 'production') {
     children: React.PropTypes.oneOfType([
       React.PropTypes.node,
       React.PropTypes.arrayOf(React.PropTypes.node),
-    ]),
+    ]).isRequired,
     className: React.PropTypes.string,
   };
 }
