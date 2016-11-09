@@ -5,7 +5,7 @@ export default function SectionsCardWrapper(props) {
   let content = [];
   let joinContent = [];
   const { children, className } = props;
-  const optionalClass = className ? `${ className } ` : '';
+  const prefix = className ? `${ className }` : 'sections-card';
   React.Children.forEach(children, (child, key) => {
     if (child.type === List) {
       const contentSwitch =
@@ -14,7 +14,7 @@ export default function SectionsCardWrapper(props) {
           topic={child.props.topic}
           links={child.props.links}
           title={child.props.title}
-          className={child.props.className}
+          prefix={prefix}
          />);
       if (child.props.join) {
         joinContent.push(contentSwitch);
@@ -24,11 +24,11 @@ export default function SectionsCardWrapper(props) {
     }
   });
   return (
-    <nav role="nav" className={`${ optionalClass }sections-card`}>
-      <div className={`${ optionalClass }sections-card__wrapper`}>
-        <div className={`${ optionalClass }sections-card__menu`}>
+    <nav role="nav" className={`${ prefix }`}>
+      <div className={`${ prefix }__wrapper`}>
+        <div className={`${ prefix }__menu`}>
           {joinContent[0] ?
-            <div className="sections-card__list sections-card__list-column-wrap">
+            <div className={`${ prefix }__list ${ prefix }__list-wrapper--column-wrap`}>
               {joinContent}
             </div> :
           null}
