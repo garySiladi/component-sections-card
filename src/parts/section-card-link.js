@@ -2,10 +2,11 @@ import Button from '@economist/component-link-button';
 import React from 'react';
 
 export default function SectionCardLink({ buttonClassName, title, buttonProps, prefix }) {
+  const { internal, ...cleanedButtonProps } = buttonProps; // eslint-disable-line no-unused-vars
   return (
     <li className={`${ prefix }__list-item`}>
       <Button
-        {...buttonProps}
+        {...cleanedButtonProps}
         className={buttonClassName}
       >
         {title}
